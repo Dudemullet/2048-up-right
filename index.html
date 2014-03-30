@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,8 +37,10 @@
 <h2>
 <a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>How-to</h2>
 
-<p>To run the up-right technique drag the bookmarklet to your tab bar and click on it when in the 2048 game page.</p>
-<a href='javascript:'>2048 up-right</a>
+<p>To run the up-right technique drag the bookmarklet to your tab bar and click on it when in the 2048 game page.
+</p>
+
+<p><p class="bookmarklet-wrapper"><a class="bookmarklet" href='javascript:!function(){var t=document.getElementsByTagName("body")[0],e=0,n=0;t.addEventListener("transitionend",function(){e=1==e?1:0,n=0});var o=function(){2>e?i():r(),3>=n?window.setTimeout(o,200):c()},c=function(){document.querySelectorAll(".score-sharing")[0].children[0].remove();var t=document.createElement("a"),e=parseInt(document.querySelector(".score-container").innerText,10);text="I scored "+e+" points at 2048 cheating with http://bit.ly/1gQ3JL5, #2048game #cheat2048",t.classList.add("twitter-share-button"),t.setAttribute("href","https://twitter.com/share"),t.setAttribute("data-via","gabrielecirulli"),t.setAttribute("data-url","http://git.io/2048"),t.setAttribute("data-counturl","http://gabrielecirulli.github.io/2048/"),t.textContent="Tweet",t.setAttribute("data-text",text),document.querySelectorAll(".score-sharing")[0].appendChild(t),twttr.widgets.load()},i=function(){0==e?a.moveUp():a.moveRight(),e++,n++},r=function(){a.moveLeft(),e=0,n++},a=function(){var e=document.createEventObject?document.createEventObject():document.createEvent("Events"),n=document.createEventObject?document.createEventObject():document.createEvent("Events"),o=document.createEventObject?document.createEventObject():document.createEvent("Events");return e.initEvent("keydown",!0,!0),n.initEvent("keydown",!0,!0),o.initEvent("keydown",!0,!0),e.keyCode=38,e.which=38,n.keyCode=39,n.which=39,o.keyCode=37,o.which=37,{moveUp:function(){return console.log("Up"),t.dispatchEvent(e)},moveRight:function(){return console.log("Right"),t.dispatchEvent(n)},moveLeft:function(){return console.log("Left"),t.dispatchEvent(o)}}},a=a();o()}();'>2048 up-right</a></p><span class="drag-msg">← drag this button to your Bookmarks Bar</span></p>
 
 <h3>
 <a name="support-contact-or-contributions" class="anchor" href="#support-contact-or-contributions"><span class="octicon octicon-link"></span></a>Support, Contact or contributions</h3>

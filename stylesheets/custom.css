@@ -1,0 +1,14 @@
+.bookmarklet {
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #39c;
+}
+
+.bookmarklet-wrapper {
+  display: inline-block;
+}
+
+.drag-msg {
+  margin-left: 10px;
+}
