@@ -1,4 +1,4 @@
-(function(){
+function start(){
 
 var
   dispatcher = document.getElementsByTagName('body')[0],
@@ -28,7 +28,7 @@ var gameFinished = function() {
 
   var 
     tweet = document.createElement('a'),
-    score = parseInt(document.querySelector('.score-container').innerText, 10)
+    score = parseInt(document.querySelector('.score-container').textContent, 10)
     text = 'I scored ' + score + ' points at 2048 cheating with http://bit.ly/1gQ3JL5, ' + 
       '#2048game #cheat2048';
   tweet.classList.add('twitter-share-button');
@@ -87,4 +87,6 @@ var board = function() {
 var board = board();
 determineMove();
 
-})();
+};
+start();
+void(0);
